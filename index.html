@@ -3,24 +3,37 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>The Love Machine</title>
+        <title>The Love Calculator</title>
         <link rel="stylesheet" href="styles.css">
     </head>
+
     <body>
 
-        <!-- Adding Calculator -->
+        <!-- Adding Love Calculator -->
         <section>
-            <div class="calc">
-            <div class="heart">
-                <img class="heart1" src="images/red heart.png" alt="beating-heart">
-                <img class="heart2" src="images/red heart.png" alt="beating-heart">
-            </div>
-                <h2 class ="your_name">What is your name?</h2>
-                <h2 class ="crush_name">What is your crush's name?</h2>
+            
+            <div class="love-calc">
+                <h1>The Love Calculator</h1>
+                <div class="ur_name">
+                    <label for="your_name">What is your name?</label><br>
+                    <input type="text" placeholder="Your Name" required>              
+                </div>
+                    <br>
+                <div class="crush_name">
+                    <label for="crush_name">What is your crush's name?</label><br>
+                    <input type="text" placeholder="Crush's Name" required>
+                </div>
+                <br>
+                <button onclick="calculate()">Calculate</button> 
+                <button onclick="reload()">Clear</button> 
         </div>
-
-
+        <div class="heart">
+            <img class="heart1" src="images/red heart.png" alt="beating-heart">
+            <img class="heart2" src="images/red heart.png" alt="beating-heart">
+            <img class="heart3" src="images/red heart.png" alt="beating-heart">
+            <img class="heart4" src="images/red heart.png" alt="beating-heart">
+        </div>
         </section>
-        
+        <script src="script.js"></script>
     </body>
 </html>

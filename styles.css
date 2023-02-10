@@ -1,4 +1,4 @@
-body {
+html, body {
     font-size: 12px;
     color: #000;
     font-family: sans-serif, serif;
@@ -6,24 +6,68 @@ body {
     background-size: cover;
     margin: 0;
     padding: 0;
+    height: 100%;
 }
 
-/* Calculator */
-.calc {
+/* White Background Section */
+section {
     background-color: #fff;
-    width: 60rem;
-    height: 30rem;
+    width: 70%;
+    height: 70%;
     top: 45%;
     left: 45%;
     transform: translate(-45%, -45%);
     position: absolute;
-
 }
 
-/* Making the hearts */
+h1 {
+    font-size: 35px;
+    font-weight: bold;
+    color: #B40800;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;     
+}
 
+/* Love Calculator */
+.love-calc {
+    width: auto;
+    height: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.ur_name, .crush_name {
+    font-size: 20px;
+}
+
+button {
+    margin: 10px 5px 0;
+    border-radius: 10%;
+    background-color: #B40800;
+    color: #fff;
+}
+
+button:hover {
+    background-color: #E6A6BE;
+}
+
+
+/* Beating hearts */
 
 .heart1 {
+    width: 8rem;
+    height: auto;
+    top: 0;
+    left: 0;
+    position: absolute;
+    animation: beat 1s infinite;
+}
+
+.heart2 {
     width: 8rem;
     height: auto;
     top: 0;
@@ -32,15 +76,24 @@ body {
     animation: beat 1s infinite;
 }
 
-.heart2 {
+.heart3 {
     width: 8rem;
     height: auto;
     bottom: 0;
     left: 0;
     position: absolute;
     animation: beat 1s infinite;
-
 }
+
+.heart4 {
+    width: 8rem;
+    height: auto;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    animation: beat 1s infinite;
+}
+ 
 
 @keyframes beat {
     0% {
@@ -62,4 +115,3 @@ body {
         transform: scale(1);
     }
 }
-
