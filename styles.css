@@ -10,6 +10,7 @@ html, body {
 }
 
 /* White Background Section */
+
 section {
     background-color: #fff;
     width: 70%;
@@ -27,36 +28,7 @@ h1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;     
 }
 
-/* Love Calculator */
-.love-calc {
-    width: auto;
-    height: auto;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    text-align: center;
-    margin-top: 5px;
-}
-
-.ur_name, .crush_name {
-    font-size: 20px;
-}
-
-button {
-    margin: 10px 5px 0;
-    border-radius: 10%;
-    background-color: #B40800;
-    color: #fff;
-}
-
-button:hover {
-    background-color: #E6A6BE;
-}
-
-
-/* Beating hearts */
+/* Beating Hearts */
 
 .heart1 {
     width: 8rem;
@@ -94,7 +66,6 @@ button:hover {
     animation: beat 1s infinite;
 }
  
-
 @keyframes beat {
     0% {
         transform: scale(1);
@@ -114,4 +85,38 @@ button:hover {
     100% {
         transform: scale(1);
     }
+}
+
+/* Love Calculator */
+.love-calc {
+    width: auto;
+    height: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.ur_name, .crush_name {
+    font-size: 20px;
+}
+
+button {
+    margin: 10px 5px 0;
+    border-radius: 10%;
+    background-color: #B40800;
+    color: #fff;
+}
+
+button:hover {
+    background-color: #E6A6BE;
+}
+
+#message {
+    font-size: 20px;
+    color: #000;
+    padding-top: 10px;
 }
