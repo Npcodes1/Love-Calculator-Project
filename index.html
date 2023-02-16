@@ -24,31 +24,28 @@
                 <img class="heart4" src="images/red heart.png" alt="beating-heart">
             </div>
 
-        <!-- Adding Love Calculator -->
+         <!-- Adding Love Calculator -->
             
             <div class="love-calc">
                 <h1>The Love Calculator</h1>
-                <div class="ur_name">
-                    <label for="your_name">What is your name?</label><br>
-                    <input type="text" placeholder="Your Name" required>              
-                </div>
-                    <br>
-                <div class="crush_name">
-                    <label for="crush_name">What is your crush's name?</label><br>
-                    <input type="text" placeholder="Crush's Name" required>
+                <div class="name">
+                    <form id="loveForm" onsubmit="checkReqFields()">
+                        <label for="yourName">What is your name? (required)</label><br>
+                        <input type="text" name="name" placeholder="Your Name" id="yourName"><br>
+                        <label for="crushName">What is your crush's name? (required)</label><br>
+                        <input type="text" name="name" placeholder="Crush's Name" id="crushName"><br>
+                        <input type="submit" name="submit" value="Calculate" class="button" id="calculate">
+                        <input type="reset" value="Clear" class="button" id="clear" onclick="reload()">
+                    </form>
                 </div>
                 <br>
-                <button onclick="calculate()">Calculate</button> 
-                <button onclick="reload()">Clear</button> 
-                
                 <p id="message"></p>
-        </div>
-        
+            </div>
         </section>
 
-        <!-- JavaScript Code -->
+       <!-- JavaScript Code -->
 
-        <script src="script.js"></script>
+       <script type="text/JavaScript" src="script.js"></script>
 
     </body>
 </html>
