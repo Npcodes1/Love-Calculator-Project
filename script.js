@@ -39,5 +39,6 @@ function checkReqFields() {
 // To clear contents
 
 function reload() {
-    document.getElementById("clear").value == ""
+    document.getElementById("clear").value == "";
+    document.getElementById("message").innerHTML = "";
 }

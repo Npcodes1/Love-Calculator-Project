@@ -7,9 +7,7 @@ body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
-    width: auto;
-    display: flex;
-    flex-direction: column;  
+    position: relative; 
 }
 
 /* White Background Section */
@@ -23,7 +21,7 @@ section {
     transform: translate(-45%, -45%);
     position: absolute;
     display: grid;
-    place-content: center;
+    justify-content: center;
 }
 
 h1 {
@@ -36,24 +34,23 @@ h1 {
 
 /* Love Calculator */
 
-.love-calc {
-    height: auto;
-    position: absolute;
+.container {
+    text-align: center;
+    position: relative;
+    display: grid;
+    justify-content: center;
     left: 0;
     right: 0;
     bottom: 0;
     top: 0;
     text-align: center;
     margin-top: 5px;
-}
-
-.name {
-    font-size: 20px;
-}
+}  
 
 #yourName, #crushName {
     margin: 12px;
     height: auto;
+    font-size: 20px;
 }
 
 .button {
@@ -75,7 +72,6 @@ h1 {
     color: #DC0000;
     width: 35vw;
     position: absolute;
-    margin: 20px;
 }
 
 /* Beating Hearts */
@@ -137,7 +133,7 @@ h1 {
     }
 }
 
-/* Extra small devices (phones, 600px and down) */
+/* Extra small devices (phones, 600px and down)
 
 @media screen and (max-width: 600px) {
     body {
@@ -159,14 +155,11 @@ h1 {
         width: 3rem;
     }
 
-    .name {
-        font-size: 15px;
-    }
-
-    .button {
+    .container .button {
         background-color: #3D1766;
+        font-size: 10px;
         margin: 5px 10px 0;
-        padding: 5px;
+        padding: 5px
     }
 
     .button:hover {
@@ -218,7 +211,7 @@ h1 {
         width: 3rem;
     }
 
-    .name {
+    .love-calc {
         font-size: 15px;
     }
 
@@ -251,7 +244,7 @@ h1 {
         padding-top: 3px;
     }
 
-    .name {
+    .love-calc {
         font-size: 15px;
     }
 
@@ -276,31 +269,51 @@ h1 {
 /* Large devices (laptops/desktops, 992px and up) */
 
 @media only screen and (min-width: 992px) {
-    #message {
+    /* .container {
+        padding: 5px 0;
+        height: auto;
+    }
+
+    h1 {
+        margin: 5px;
+    }
+
+    .love-calc {
+        font-size: 15px;
+    }
+
+    .button {
         font-size: 18px;
         color: #DC0000;
         width: 35vw;
         position: absolute;
         margin: 20px;
     }
+
+
+    } */
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-
+/* 
 @media only screen and (min-width: 1200px) {
     body {
         background-image: url(images/background\ hearts.jpg);
     }
-    
+
     h1 {
         font-size: 40px;
         color: #DC0000;
         margin: 18px;
     }
 
-    .name {
+    .love-calc {
         font-size: 20px;
         margin-top: 0;
+    }
+
+    #yourName, #crushsName {
+        margin-top: 15px;
     }
 
     .heart1, .heart2, .heart3, .heart4 {
@@ -324,4 +337,4 @@ h1 {
         width: 500px;
         left: 20%;
     }
-}
+} */ 
