@@ -7,6 +7,7 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%;
+    width: auto;
 }
 
 /* White Background Section */
@@ -24,8 +25,54 @@ section {
 h1 {
     font-size: 35px;
     font-weight: bold;
-    color: #B40800;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;     
+    color: #DC0000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: auto;     
+}
+
+/* Love Calculator */
+
+.love-calc {
+    height: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.name {
+    font-size: 20px;
+}
+
+#yourName, #crushName {
+    margin: 12px;
+    height: auto;
+}
+
+.button {
+    border-radius: 10%;
+    border-width: 0;
+    background-color: #DC0000;
+    color: #fff;
+    font-weight: bold;
+    margin: 15px 35px 0;
+    padding: 13px;
+}
+
+.button:hover {
+    background-color: #FF5F9E;
+}
+
+#message {
+    font-size: 20px;
+    color: #DC0000;
+    width: 35vw;
+    position: absolute;
+    left: 25%;
+    margin: 20px;
 }
 
 /* Beating Hearts */
@@ -87,40 +134,165 @@ h1 {
     }
 }
 
-/* Love Calculator */
-.love-calc {
-    width: auto;
-    height: auto;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    text-align: center;
-    margin-top: 5px;
+
+/* Extra small devices (phones, 600px and down) */
+
+@media screen and (max-width: 599px) {
+    body {
+        background-image: url(images/tunnel-of-love.jpg);
+    }
+
+    section {
+        background-color: #FFD56F;
+    }
+
+    h1 {
+        font-size: 25px;
+        padding-top: 20px;
+        color: #3D1766;
+        width: auto;
+    }
+
+    .heart1, .heart2, .heart3, .heart4 {
+        width: 6rem;
+        height: auto;
+    }
+
+    .name {
+        font-size: 15px;
+    }
+
+    .button {
+        background-color: #3D1766;
+        margin: 15px 30px 0;
+        padding: 10px;
+    }
+
+    .button:hover {
+        background-color: #DC0000;
+        color: #fff;
+    }
+
+    #message {
+        font-size: 15px;
+        color: #DC0000;
+        width: 200px;
+        position: absolute;
+        left: 20%;
+        margin-top: 20px;
+    }
+
 }
 
-.name {
-    font-size: 20px;
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media screen and (min-width: 600px) and (max-width: 767px) {
+    body {
+        background-image: url(images/roses.jpg);
+    }
+
+    section {
+        background-color: #fff;
+    }
+
+    h1 {
+        font-size: 28px;
+        padding-top: 25px;
+        color: #E80F88;
+    }
+
+    .heart1, .heart2, .heart3, .heart4 {
+        width: 4rem;
+    }
+
+    .name {
+        font-size: 15px;
+    }
+
+    .button {
+        background-color: #E80F88;
+        margin: 15px 30px 0;
+        padding: 13px;
+    }
+
+    .button:hover {
+       background-color: #DC0000;
+       color: #fff;
+    }
+
+    #message {
+        font-size: 15px;
+        color: #DC0000;
+        width: 200px;
+        position: absolute;
+        left: 25%;
+        margin-top: 10px;
+    }
 }
 
-#yourName, #crushName {
-    margin: 12px;
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    h1 {
+        font-size: 40px;
+        padding-top: 30px;
+    }
+
+    .name {
+        font-size: 20px;
+    }
+
+    .heart1, .heart2, .heart3, .heart4 {
+        width: 6rem;
+    }
+
+    .button {
+        margin: 20px 30px 0;
+    }
+
+    #message {
+        font-size: 20px;
+        width: 300px;
+        position: absolute;
+        left: 25%;
+        margin: 30px 20px;
+    }
 }
 
+/* Extra large devices (large laptops and desktops, 1200px and up) */
 
-.button {
-    margin: 5px 5px 0;
-    border-radius: 10%;
-    background-color: #B40800;
-    color: #fff;
-}
+@media only screen and (min-width: 1200px) {
+    body {
+        background-image: url(images/background\ hearts.jpg);
+    }
+    
+    h1 {
+        font-size: 60px;
+        color: #DC0000;
+    }
 
-.button:hover {
-    background-color: #E6A6BE;
-}
+    .name {
+        font-size: 25px;
+    }
 
-#message {
-    font-size: 20px;
-    color: #000;
+    .heart1, .heart2, .heart3, .heart4 {
+        width: 12rem;
+    }
+
+    .button {
+        margin: 25px 45px 0;
+        background-color: #DC0000;
+    }
+
+    .button:hover {
+        background-color: #FF5F9E;
+    }
+
+    #message {
+        font-size: 25px;
+        margin-top: 40px;
+        color: #DC0000;
+        width: 500px;
+        left: 25%;
+    }
 }
