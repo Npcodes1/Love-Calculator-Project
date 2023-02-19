@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>The Love Calculator</title>
 
         <!-- Favicon -->
@@ -35,11 +35,10 @@
                         <label for="crushName">What is your crush's name? (required)</label><br>
                         <input type="text" name="name" placeholder="Crush's Name" id="crushName"><br>
                         <input type="submit" name="submit" value="Calculate" class="button" id="calculate">
-                        <input type="reset" value="Clear" class="button" id="clear" onclick="reload()">
+                        <input type="reset" value="Clear" class="button" id="clear" onclick="reload()"><br>
+                        <p id="message"></p>
                     </form>
-                </div>
-                <br>
-                <p id="message"></p>
+                </div> 
             </div>
         </section>
 

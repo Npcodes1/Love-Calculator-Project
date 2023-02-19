@@ -1,4 +1,4 @@
-html, body {
+body {
     font-size: 12px;
     color: #000;
     font-family: sans-serif, serif;
@@ -6,20 +6,24 @@ html, body {
     background-size: cover;
     margin: 0;
     padding: 0;
-    height: 100%;
+    min-height: 100vh;
     width: auto;
+    display: flex;
+    flex-direction: column;  
 }
 
 /* White Background Section */
 
 section {
     background-color: #fff;
-    width: 70%;
-    height: 70%;
+    width: 70vw;
+    height: 70vh;
     top: 45%;
     left: 45%;
     transform: translate(-45%, -45%);
     position: absolute;
+    display: grid;
+    place-content: center;
 }
 
 h1 {
@@ -71,7 +75,6 @@ h1 {
     color: #DC0000;
     width: 35vw;
     position: absolute;
-    left: 25%;
     margin: 20px;
 }
 
@@ -134,10 +137,9 @@ h1 {
     }
 }
 
-
 /* Extra small devices (phones, 600px and down) */
 
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 600px) {
     body {
         background-image: url(images/tunnel-of-love.jpg);
     }
@@ -147,15 +149,14 @@ h1 {
     }
 
     h1 {
-        font-size: 25px;
-        padding-top: 20px;
+        font-size: 28px;
+        padding-top: 0;
         color: #3D1766;
         width: auto;
     }
 
     .heart1, .heart2, .heart3, .heart4 {
-        width: 6rem;
-        height: auto;
+        width: 3rem;
     }
 
     .name {
@@ -164,8 +165,8 @@ h1 {
 
     .button {
         background-color: #3D1766;
-        margin: 15px 30px 0;
-        padding: 10px;
+        margin: 5px 10px 0;
+        padding: 5px;
     }
 
     .button:hover {
@@ -179,14 +180,26 @@ h1 {
         width: 200px;
         position: absolute;
         left: 20%;
-        margin-top: 20px;
+        margin-top: 15px;
+        text-align: center;
+    }
+}
+
+/* Mobile device landscape */
+
+@media screen and (max-height: 468px) and (min-aspect-ratio: 7/4) {
+    body {
+        background-image: url(images/tunnel-of-love.jpg);
     }
 
+    section {
+        background-color: #FFD56F;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 
-@media screen and (min-width: 600px) and (max-width: 767px) {
+@media screen and (min-width: 600px) {
     body {
         background-image: url(images/roses.jpg);
     }
@@ -197,12 +210,12 @@ h1 {
 
     h1 {
         font-size: 28px;
-        padding-top: 25px;
+        padding-top: 0;
         color: #E80F88;
     }
 
     .heart1, .heart2, .heart3, .heart4 {
-        width: 4rem;
+        width: 3rem;
     }
 
     .name {
@@ -211,8 +224,8 @@ h1 {
 
     .button {
         background-color: #E80F88;
-        margin: 15px 30px 0;
-        padding: 13px;
+        margin: 5px 10px 0;
+        padding: 5px;
     }
 
     .button:hover {
@@ -225,37 +238,50 @@ h1 {
         color: #DC0000;
         width: 200px;
         position: absolute;
-        left: 25%;
-        margin-top: 10px;
+        left: 20%;
+        margin-top: 15px;
     }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media screen and (min-width: 768px) {
     h1 {
-        font-size: 40px;
-        padding-top: 30px;
+        font-size: 30px;
+        padding-top: 3px;
     }
 
     .name {
-        font-size: 20px;
+        font-size: 15px;
     }
 
     .heart1, .heart2, .heart3, .heart4 {
-        width: 6rem;
+        width: 4rem;
     }
 
     .button {
-        margin: 20px 30px 0;
+        margin: 5px 15px 0;
+        padding: 5px;
     }
 
     #message {
-        font-size: 20px;
+        font-size: 15px;
         width: 300px;
         position: absolute;
-        left: 25%;
-        margin: 30px 20px;
+        left: 20%;
+        margin: 20px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {
+    #message {
+        font-size: 18px;
+        color: #DC0000;
+        width: 35vw;
+        position: absolute;
+        margin: 20px;
     }
 }
 
@@ -267,21 +293,24 @@ h1 {
     }
     
     h1 {
-        font-size: 60px;
+        font-size: 40px;
         color: #DC0000;
+        margin: 18px;
     }
 
     .name {
-        font-size: 25px;
+        font-size: 20px;
+        margin-top: 0;
     }
 
     .heart1, .heart2, .heart3, .heart4 {
-        width: 12rem;
+        width: 6rem;
     }
 
     .button {
-        margin: 25px 45px 0;
+        margin: 10px 45px 0;
         background-color: #DC0000;
+        padding: 10px;
     }
 
     .button:hover {
@@ -289,10 +318,10 @@ h1 {
     }
 
     #message {
-        font-size: 25px;
-        margin-top: 40px;
+        font-size: 20px;
+        margin-top: 25px;
         color: #DC0000;
         width: 500px;
-        left: 25%;
+        left: 20%;
     }
 }
